@@ -1,0 +1,40 @@
+samples:
+  - DSUK050
+  - DSUK051
+  - DSUK054
+  - DSUK070
+  - DSUK074
+  - DSUK075
+  - DSUK079
+  - DSUK109
+  - DSUK110
+  - DSUK144
+  - DSUK146
+  - DSUK147
+  - DSUK149
+  - DSUK150
+  - DSUK155
+  - DSUK159
+  - DSUK168
+  - DSUK169
+  - DSUK179a
+  - REANEG
+outdir: analysis_2023
+indir: fastq
+metadata: /raid/HomeBiome/meta/snakemake_version/homebiome_metagenomics_metadata.csv
+trimgalore: /home/twr_w20032671/TrimGalore-0.6.6/trim_galore
+bbmap_dir: /home/twr_w20032671/BBMap/bbmap_38_87
+remove_human: /raid/MattC/databases/removehuman_dbs/
+bbmap_reformat: /home/twr_w20032671/BBMap/bbmap_38_87
+kraken_db: /raid/Kraken2/plusPFP_20210408
+bracken_level: S
+read_length: 100
+shortbred_markers: /raid/MattC/databases/shortBRED/databases_2023/card_2023_shortbred_markers.faa
+card_aro_index: /raid/MattC/databases/shortBRED/databases_2023/aro_index.tsv
+levels: 
+  - P
+  - C
+  - O
+  - F
+  - G
+  - S

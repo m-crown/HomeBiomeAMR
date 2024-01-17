@@ -1,0 +1,1 @@
+had to convert from python2 to python3. mostly print characters. Also needed to open gzip with rt not rb in line 521

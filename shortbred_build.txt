@@ -1,0 +1,9 @@
+cat protein_fasta_protein_homolog_model.fasta.gz, protein_fasta_protein_variant_model.fasta.gz, protein_fasta_protein_knockout_model.fasta.gz, protein_fasta_protein_overexpression_model.fasta.gz > combined_protein_models.fasta.gz
+
+seqkit seq -m 50 combined_protein_models.fasta.gz -o filtered_combined_protein_models.fasta.gz
+
+python3 AdjustFastaHeadersForShortBRED.py filtered_combined_protein_models.fasta.gz
+
+python3 clean_script.py
+
+shortbred_identify.py --goi formatted_filtered_combined_protein_models_cleaned.fasta.gz --ref uniref90.fasta.gz --markers card_2023_shortbred_markers.faa --tmp card_identify
